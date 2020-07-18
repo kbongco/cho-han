@@ -6,37 +6,29 @@
 
 
 function dice() {
-  dice_1 = [1, 2, 3, 4, 5, 6]
-  dice_2 = [1, 2, 3, 4, 5, 6]
-  combined = []
-  for (let i = 0; i < dice_1.length; i++) {
-    sliceddice = dice_1.slice()
-    combined.push(sliceddice)
-  } for (let j = 0; i < dice_2.length; j++) {
-    slicediced2 = dice_2.slice()
-    combined.push(sliceddice2)
-  } return combined
+  dice1 = Math.floor(Math.random() * 6) + 1
+  dice2 = Math.floor(Math.random() * 6) + 1
+  return dice1 + dice2
 }
 
 
-//Step 2: Rolling the dice so its random 
-//Create a function called roll
-//Use the random function to roll the dice so the numbers come out randomly
-//
-
-// function roll() {
-//   const rolleddice = combined;
-
-// }
+//Step 2: Check if odd or even 
+check = () => {
+  if (dice() % 2 == 0) {
+    return Even 
+  } else {
+    return Odd 
+  }
+}
 
 //Step 3: 
 //Get input from user, how much they are going to bet, and guess if they have
 //odd(han) or even(cho)
 
 function input() {
-  let betamt = 0
+  let betamt = 10000
   let bet = getInput('How much are you betting?')
-  betamt + bet
+  betamt - bet
 }
 
 //Respond to whether or not its cho or han 
